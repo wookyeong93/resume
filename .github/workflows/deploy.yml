@@ -5,33 +5,31 @@ on:
     branches:
       - main
 
-# GitHub Pages 배포를 위한 권한 설정
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 동시 배포 제어 (기존 배포 취소 및 대기 처리)
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # 1. 빌드 작업
   build:
     runs-on: ubuntu-latest
     steps:
+      # 최신 Node 24 러너와 호환되는 패치 버전 지정
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.1.0
         with:
-          node-version: 20
-          cache: 'npm' # npm 캐시를 활성화하면 빌드 속도가 빨라집니다.
+          node-version: 20 # Next.js 빌드용 Node 버전
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci # 늘 일관된 버전을 설치하는 ci 명령어 권장
+        run: npm ci
 
       - name: Build with Next.js
         run: npm run build
@@ -41,7 +39,6 @@ jobs:
         with:
           path: ./out
 
-  # 2. 배포 작업
   deploy:
     environment:
       name: github-pages
