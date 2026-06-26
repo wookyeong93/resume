@@ -3,24 +3,33 @@
 
 @theme {
   /* ===== 색상 ===== */
-  --color-bg: #08080a;
-  --color-sheet: #0d0d0f;
-  --color-card: #0e0e10;
-  --color-chip: #131316;
+  --color-bg: #f4f4f6;
+  --color-sheet: #ffffff;
+  --color-card: #f6f6f9;
+  --color-chip: #f1f1f4;
 
-  --color-line-soft: #16161a;
-  --color-line: #1c1c20;
-  --color-line-tag: #232328;
+  --color-line-soft: #ececef;
+  --color-line: #e4e4ea;
+  --color-line-tag: #dcdce3;
+  --color-line-hover: #9ec0f0;
 
-  --color-ink: #ededef;
-  --color-ink-soft: #c4c4cb;
-  --color-ink-mute: #9a9aa3;
-  --color-ink-faint: #6a6a73;
-  --color-ink-footer: #46464d;
+  --color-ink: #17171c;
+  --color-ink-soft: #2c2c33;
+  --color-ink-mute: #55555e;
+  --color-ink-faint: #6f6f79;
+  --color-ink-footer: #a6a6af;
+  --color-dot: #9aa0a8;
 
-  --color-accent: #3b82f6;
-  --color-accent-hover: #2f6fd6;
-  --color-accent-soft: #7cb1ff;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-soft: #2563eb;
+  --color-accent-bg: #eaf1ff;
+  --color-accent-border: #cfe0ff;
+
+  --color-border-strong: #d8d8df;
+  --color-border-strong-hover: #c2c2cb;
+
+  --color-grid-line: #f1f1f499;
 
   /* ===== 폰트 ===== */
   --font-display: 'Space Grotesk', sans-serif;
@@ -28,7 +37,7 @@
   --font-sans: 'IBM Plex Sans KR', sans-serif;
 
   /* ===== 그림자 ===== */
-  --shadow-sheet: 0 30px 80px -40px rgba(0, 0, 0, 0.9);
+  --shadow-sheet: 0 30px 80px -40px rgba(15, 23, 42, 0.12);
 }
 
 body {

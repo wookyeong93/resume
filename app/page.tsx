@@ -12,7 +12,7 @@ export default function Home() {
                         className="pointer-events-none absolute inset-0"
                         style={{
                             backgroundImage:
-                                'linear-gradient(#13131699 1px,transparent 1px),linear-gradient(90deg,#13131699 1px,transparent 1px)',
+                                'linear-gradient(var(--color-grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--color-grid-line) 1px,transparent 1px)',
                             backgroundSize: '36px 36px',
                             maskImage:
                                 'radial-gradient(ellipse 70% 120% at 85% 0%,#000 10%,transparent 70%)',
@@ -25,7 +25,7 @@ export default function Home() {
                         <div className="min-w-[260px] flex-1">
                             <div
                                 className="mb-5 inline-flex items-center gap-2 rounded-full border px-3 py-1.5 font-mono text-xs text-accent-soft"
-                                style={{ borderColor: '#1f3a5f', background: '#0d1929' }}
+                                style={{ borderColor: 'var(--color-accent-border)', background: 'var(--color-accent-bg)' }}
                             >
                                 <span
                                     className="h-1.5 w-1.5 rounded-full"
@@ -118,7 +118,7 @@ export default function Home() {
                           <h2 className="mb-6 font-display text-2xl font-semibold tracking-[-0.8px]">
                               Experience
                           </h2>
-                          <div className="relative border-l border-[#1f1f24] pl-[22px]">
+                          <div className="relative border-l border-line pl-[22px]">
                               {experiences.map((job) => (
                                   <div key={job.company} className="relative pb-8">
                                       {/* 타임라인 점 */}
@@ -137,7 +137,7 @@ export default function Home() {
                                           <span className="font-mono text-[13px] text-accent">{job.role}</span>
                                           {job.team && (
                                               <>
-                                                  <span className="text-[12.5px] text-[#5a5a63]">·</span>
+                                                  <span className="text-[12.5px] text-dot">·</span>
                                                   <span className="text-[12.5px] text-ink-mute">{job.team}</span>
                                               </>
                                           )}
@@ -169,7 +169,7 @@ export default function Home() {
                                                   <div className="mt-2 flex items-baseline gap-2">
                                                       <span
                                                           className="whitespace-nowrap rounded-[5px] border px-[7px] py-0.5 font-mono text-[10.5px] text-accent-soft"
-                                                          style={{ borderColor: '#1f3a5f', background: '#0d1929' }}
+                                                          style={{ borderColor: 'var(--color-accent-border)', background: 'var(--color-accent-bg)' }}
                                                       >
                                                           {pr.role}
                                                       </span>

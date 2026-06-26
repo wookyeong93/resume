@@ -14,7 +14,7 @@ export default function TopBar() {
             <Link href="/" className="flex items-center gap-2 font-mono text-sm font-semibold">
                 <span
                     className="h-2 w-2 rounded-full bg-accent"
-                    style={{ boxShadow: '0 0 10px #3b82f6' }}
+                    style={{ boxShadow: '0 0 10px var(--color-accent)' }}
                 />
                 권우경
             </Link>
@@ -42,8 +42,8 @@ export default function TopBar() {
                 <a
                     href="https://github.com/wookyeong93"
                     target="_blank"
-                    className="inline-flex items-center gap-1.5 rounded-[9px] border px-3.5 py-2 font-mono text-[12.5px] text-ink transition hover:border-[#3f3f47]"
-                    style={{ borderColor: '#2a2a30' }}
+                    className="inline-flex items-center gap-1.5 rounded-[9px] border px-3.5 py-2 font-mono text-[12.5px] text-ink transition hover:border-border-strong-hover"
+                    style={{ borderColor: 'var(--color-border-strong)' }}
                 >
                     GitHub ↗
                 </a>
