@@ -37,7 +37,7 @@
     export const projects: Project[] = [
         {
             slug: 'fingate-kakaopay-db-migration',
-            name: '핀게이트 카카오페이 커스텀 DB 마이그레이션',
+            name: '핀게이트 DB 마이그레이션',
             year: '2025.08 - 2026.01',
             field: '금융 · 핀테크 · DB',
             gradient: 'linear-gradient(135deg, #FFD200 0%, #393939 100%)',
