@@ -1,7 +1,9 @@
-import { profile } from '@/data/profile'
+import { profile, statusLabels , statusConfig } from '@/data/profile'
 import { experiences, education, certs, sideProject } from '@/data/experience'
 
 export default function Home() {
+    const color = statusConfig[profile.status]?.color
+    const statusLabel = statusLabels[profile.status]
     return (
         <main className="mx-auto max-w-[1040px] px-4 py-6">
             <div className="overflow-hidden rounded-[18px] border border-line bg-sheet shadow-sheet">
@@ -29,9 +31,9 @@ export default function Home() {
                             >
                                 <span
                                     className="h-1.5 w-1.5 rounded-full"
-                                    style={{ background: '#22c55e', boxShadow: '0 0 8px #22c55e' }}
+                                    style={{ background: `${color}`, boxShadow: `0 0 8px ${color}` }}
                                 />
-                                {profile.status}
+                                {statusLabel}
                             </div>
                             <h1 className="font-display text-[34px] font-semibold leading-none tracking-[-2px] md:text-[52px]">
                                 {profile.name}

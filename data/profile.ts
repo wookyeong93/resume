@@ -1,3 +1,28 @@
+
+    export type JobSearchStatus = 'active' | 'openToOffers' | 'focusing'
+
+    export const statusLabels: Record<JobSearchStatus, string> = {
+        active: '적극적으로 구직중입니다.',
+        openToOffers: '이직 제안은 메일로 연락주세요.',
+        focusing: '현재에 집중중입니다.',
+    }
+
+    export interface StatusConfig {
+        color: string
+    }
+
+    export const statusConfig: Record<JobSearchStatus, StatusConfig> = {
+        active: {
+            color: '#22c55e', // green
+        },
+        openToOffers: {
+            color: '#f97316', // orange
+        },
+        focusing: {
+            color: '#9ca3af', // gray
+        },
+    }
+
     export interface HeroStat {
         value: string
         label: string
@@ -19,7 +44,7 @@
         brand: string
         name: string
         title: string
-        status: string
+        status: JobSearchStatus
         summary: string
         githubHref: string
         heroStats: HeroStat[]
@@ -31,7 +56,7 @@
         brand: 'Wookyeong Kwon', 
         name: '권우경', 
         title: '백엔드 개발자', 
-        status: '적극적으로 구직중입니다.', 
+        status: 'focusing', 
         summary: 'SI에서 다양한 프로젝트를 진행하며 분석, 설계, 구축, 운영까지 전체 사이클을 경험해본 6년차 풀스택 개발자입니다. 다른 직군과 협업하며 더 나은 서비스를 만들고 개선해 나가는 것을 중요하게 생각합니다.',
         githubHref: 'https://github.com/wookyeong93', 
 
