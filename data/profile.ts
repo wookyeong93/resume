@@ -56,7 +56,7 @@
         brand: 'Wookyeong Kwon', 
         name: '권우경', 
         title: '백엔드 개발자', 
-        status: 'focusing', 
+        status: 'active', 
         summary: 'SI에서 다양한 프로젝트를 진행하며 분석, 설계, 구축, 운영까지 전체 사이클을 경험해본 6년차 풀스택 개발자입니다. 다른 직군과 협업하며 더 나은 서비스를 만들고 개선해 나가는 것을 중요하게 생각합니다.',
         githubHref: 'https://github.com/wookyeong93', 
 
